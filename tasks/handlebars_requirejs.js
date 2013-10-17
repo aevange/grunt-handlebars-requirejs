@@ -61,7 +61,7 @@ module.exports = function(grunt) {
         filename = processName(file);
 
         output  = ""
-        output += "define(['handlebars'], function(Handlebars){\n"
+        output += "define(['handlebars'], function(handlebars){\n"
         output += "var template = " + compiled + "\n"
         if (options.makePartials) {
           partialName = filename.replace(/\//g,'.')
